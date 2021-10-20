@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        grid-template-rows: 2fr 5fr 1fr;
+        grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+        font-family: serif;
+    }
+    
+    header {
+        border: 2px solid rgb(119, 253, 119);
+        grid-area: header;
+        background-color: lime;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 102, 102);
+        font-size: 30px;
+    }
+    
+    main {
+        grid-area: main;
+        background-color: rgb(83, 255, 83);
+        font-family: sans-serif;
+    }
+
+    ol {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    ol li a {
+        text-decoration: none;
+        color: rgb(51, 50, 50);
+        font-size: 20px;
+    }
+
+    aside {
+        grid-area: aside;
+        border: 1px solid rgb(72, 72, 72);
+        font-family: serif;
+    }
+    
+    aside ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        list-style: none;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        font-size: 60px;
+        color: green;
+    }
+
+    footer {
+        border: 1px solid white;
+        grid-area: footer;
+        font-family: serif;
+        background-color: black;
+        color: wheat;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media(max-width: 978px) {
+        .container {
+            grid-template-rows: 1fr 3fr 2fr 1fr;
+            grid-template-areas:
+                "header header"
+                "main main"
+                "aside aside"
+                "footer footer";
+        }
+
+        header {
+            font-size: 4vw;
+        }
+
+        ol li a {
+            font-size: 3.5vw;
+        }
+
+        aside {
+            width: 100%;
+        }
+
+        ul li a {
+            font-size: 15vw;
+        }
+
+        footer {
+            font-size: 5vw;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crack Smadav Pro 2021</h1>
+        </header>
+        
+        <main>
+            <ol>
+                <li><a href="">Buka Apk Smadav Pro 2021</a></li>
+                <li><a href="">Masuk ke Menu Settings</a></li>
+                <li><a href="">Masukkan Nama & Key sesuai dengan yang ada diSini!</a></li>
+                <li><a href="">Klik Register</a></li>
+            </ol>
+        </main>
+        
+        <aside>
+            <ul>
+                <li><a href="">Nama</a></li>
+                <li><a href="">Key</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>---&ltCreated By Faizal Dwi Al Farizi&gt---</p>
+        </footer>
+
+        <script>
+            const nama = document.querySelector("ul li:nth-child(1)");
+            const key = document.querySelector("ul li:nth-child(2)");
+
+            nama.addEventListener("click", function(){
+                alert("Hiskia Group");
+            });
+
+            key.addEventListener("click", function(){
+                alert("993899338897");
+            });
+        </script>
+    </div>
+</body>
+</html>
